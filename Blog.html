@@ -19,5 +19,15 @@
             </div>
             <button id="backToDeskBtn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Back to Desk</button>
         </div>
+
+        <script>
+            
+            document.addEventListener('DOMContentLoaded', () => {
+                const backToDeskBtn = document.getElementById('backToDeskBtn');
+                backToDeskBtn.addEventListener('click', () => {
+                    window.location.href = 'index.html'; 
+                });
+            });
+        </script>
 </body>
 </html>
