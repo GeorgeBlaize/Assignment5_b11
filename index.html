@@ -48,6 +48,118 @@
              <span id="currentDate"></span>
          </div>
     </div>
+
+     <!-- Main Content and Activity Log Layout Part -->
+     <div class="flex flex-col md:flex-row gap-6">
+        <!-- Task Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 flex-1">
+            <!-- Shop Ease Card -->
+        
+            <div class="bg-blue-100 p-6 rounded-lg shadow-md">
+                <span class="bg-white text-black px-2 py-1 rounded text-sm">ShopEase</span>
+                <p class="text-gray-600 mb-4 font-bold">Fix Mobile Button Issue</p>
+                <p class="bg-white text-gray-500 px-2 py-1 rounded text-sm mb-4">Debug using Chrome DevTools, check for overlap.</p>
+                
+                <div class="flex justify-between items-center">
+                    <div>
+                        <span class="text-gray-400 text-sm block">Deadline</span>
+                        <p class="text-gray-700 font-bold">21 March 2025</p>
+                    </div>
+                    <button id="shopEaseBtn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Completed</button>
+                </div>
+            </div>
+            
+
+            <!-- CloudSynce Card -->
+            <div class="bg-blue-100 p-6 rounded-lg shadow-md">
+                <span class="bg-white text-black px-2 py-1 rounded text-sm">CloudSynce</span>
+                <p class="text-gray-600 mb-4 font-bold">Add Dark Mode</p>
+                <p class="bg-white text-gray-500 px-2 py-1 rounded text-sm mb-4">Stores the user's preference in localStorage,update CSS vari..</p>
+                
+                <div class="flex justify-between items-center">
+                    <div>
+                        <span class="text-gray-400 text-sm block">Deadline</span>
+                        <p class="text-gray-700 font-semibold">21 March 2025</p>
+                    </div>
+                    <button id="shopEaseBtn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Completed</button>
+                </div>
+            </div>
+            
+
+            <!-- Swiftpay Card -->
+            <div class="bg-blue-100 p-6 rounded-lg shadow-md">
+                <span class="bg-white text-black px-2 py-1 rounded text-sm">Swiftpay</span>
+                <p class="text-gray-600 mb-4 font-bold">Optimized Home Page</p>
+                <p class="bg-white text-gray-500 px-2 py-1 rounded text-sm mb-4">Debug using chrome DevTools,check for overlappi...</p>
+                
+                <div class="flex justify-between items-center">
+                    <div>
+                        <span class="text-gray-400 text-sm block">Deadline</span>
+                        <p class="text-gray-700 font-semibold">21 March 2025</p>
+                    </div>
+                    <button id="shopEaseBtn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Completed</button>
+                </div>
+            </div>
+   
+            <!-- Meta Card -->
+            <div class="bg-blue-100 p-6 rounded-lg shadow-md">
+                <span class="bg-white text-black px-2 py-1 rounded text-sm">Meta</span>
+                <p class="text-gray-600 mb-4 font-bold">Add new emoji</p>
+                <p class="bg-white text-gray-500 px-2 py-1 rounded text-sm mb-4">Debug using chrome DevTools,check for overlappi...</p>
+                
+                <div class="flex justify-between items-center">
+                    <div>
+                        <span class="text-gray-400 text-sm block">Deadline</span>
+                        <p class="text-gray-700 font-semibold">21 March 2025</p>
+                    </div>
+                    <button id="shopEaseBtn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Completed</button>
+                </div>
+            </div>
+
+            <!-- Google LLC Card -->
+            <div class="bg-blue-100 p-6 rounded-lg shadow-md">
+                <span class="bg-white text-black px-2 py-1 rounded text-sm">Google LLC</span>
+                <p class="text-gray-600 mb-4 font-bold">Integrate OpenAI API</p>
+                <p class="bg-white text-gray-500 px-2 py-1 rounded text-sm mb-4">Debug using chrome DevTools,check for overlappi...</p>
+                
+                <div class="flex justify-between items-center">
+                    <div>
+                        <span class="text-gray-400 text-sm block">Deadline</span>
+                        <p class="text-gray-700 font-semibold">21 March 2025</p>
+                    </div>
+                    <button id="shopEaseBtn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Completed</button>
+                </div>
+            </div>
+
+            <!-- Glassdoar Card -->
+            <div class="bg-blue-100 p-6 rounded-lg shadow-md">
+                <span class="bg-white text-black px-2 py-1 rounded text-sm">Glassdoar</span>
+                <p class="text-gray-600 mb-4 font-bold">Improve Job searching</p>
+                <p class="bg-white text-gray-500 px-2 py-1 rounded text-sm mb-4">Debug using chrome DevTools,check for overlappi...</p>
+                
+                <div class="flex justify-between items-center">
+                    <div>
+                        <span class="text-gray-400 text-sm block">Deadline</span>
+                        <p class="text-gray-700 font-semibold">21 March 2025</p>
+                    </div>
+                    <button id="shopEaseBtn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Completed</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Activity Log (Right Side) -->
+        <div class="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-md">
+            <div class="flex justify-between items-center mb-4">
+                <img src="assets/activity.png" alt="">
+                <h3 class="text-lg font-semibold text-gray-800">Activity Log</h3>
+                <button id="clearHistoryBtn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Clear History</button>
+            </div>
+            <ul id="activityLog" class="list-disc pl-5 text-gray-600 space-y-2">
+                <!-- Activity log entries will be added here dynamically -->
+            </ul>
+        </div>
+    </div>
      
  </div>
 
