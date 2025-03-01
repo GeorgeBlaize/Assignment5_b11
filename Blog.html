@@ -19,8 +19,94 @@
             </div>
             <button id="backToDeskBtn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Back to Desk</button>
         </div>
+        <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Blogs</h2>
+
+
+        <div class="i bg-white rounded-lg shadow-md">
+
+           <p class="pl-4 font-bold">Question-1: What are the different ways to select an element in the DOM?
+            You can select elements in the DOM using:   </p>
+
+            <p class="pl-4">1.getElementById(): Selects an element by its unique ID.  <br>
+
+                2.getElementsByClassName(): Selects elements by class name (returns a live HTMLCollection).  <br>
+                
+                3.getElementsByTagName(): Selects elements by tag name (returns a live HTMLCollection).  <br>
+                
+                4.querySelector(): Selects the first element matching a CSS selector.  <br>
+                
+                5.querySelectorAll(): Selects all elements matching a CSS selector (returns a static NodeList).  <br>
+                
+                </p>    
+        </div>
+
+        <div class="mt-4 i bg-white rounded-lg shadow-md">
+
+            <p class="pl-4 font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent?  
+
+            </p>
+ 
+             <p class="pl-4">1.innerHTML: Gets or sets the HTML content inside an element, including HTML tags.   <br>
+ 
+                 2.innerText: Gets or sets the visible text content, excluding hidden elements and styles, but includes text node formatting.  
+
+                 <br>
+                 
+                 3.textContent: Gets or sets all text content, including hidden elements and script/style text, but ignores HTML tags.
+
+                 <br>
+                 
+                
+                 
+                 </p>    
+         </div>
+
+         <div class="mt-4 i bg-white rounded-lg shadow-md">
+
+            <p class="pl-4 font-bold">Question-3: What is event delegation in the DOM?
+            </p>
+ 
+             <p class="pl-4">
+                Event delegation is a technique where you attach a single event listener to a parent element to handle events for its child elements. It leverages event bubbling to efficiently manage events on dynamically added elements, reducing memory usage and improving performance.
+
+
+                
+                 
+                 </p>    
+         </div>
+
+         <div class="mt-4 i bg-white rounded-lg shadow-md">
+
+            <p class="pl-4 font-bold">Question-4: What is event bubbling in the DOM?
+            </p>
+ 
+             <p class="pl-4">
+                
+                Event bubbling is the process where an event triggered on a nested element propagates up through its ancestors in the DOM tree, from the innermost element to the outermost, unless stopped (e.g., with stopPropagation()). For example, a click on a button inside a div will trigger the click event on both the button and the div.
+  
+                 </p>    
+         </div>
+          
+         <div class="mt-4 i bg-white rounded-lg shadow-md">
+
+            <p class="pl-4 font-bold">Question-5: How do you create, add, and remove elements using JavaScript?  
+
+
+            </p>
+ 
+             <p class="pl-4">
+                
+                1.Create: Use document.createElement('tagName') to create a new element (e.g., const div = document.createElement('div')).  <br>
+                2.Add: Use appendChild() or insertBefore() to add the element to the DOM (e.g., parent.appendChild(div) or parent.insertBefore(div, referenceNode)).  <br>
+                3.Remove: Use remove() on the element itself (e.g., div.remove()) or removeChild() on the parent (e.g.,parent.removeChild(div)).
+
+                 </p>    
+         </div>
+         
 
         <script>
+
+
             
             document.addEventListener('DOMContentLoaded', () => {
                 const backToDeskBtn = document.getElementById('backToDeskBtn');
