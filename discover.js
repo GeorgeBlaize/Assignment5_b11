@@ -1,3 +1,3 @@
 discoverLink.addEventListener('click', () => {
-    window.open('blog.html', '_blank'); 
+    window.open('index1.html', '_blank'); 
 });
