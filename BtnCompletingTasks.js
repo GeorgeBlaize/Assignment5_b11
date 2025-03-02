@@ -1,12 +1,12 @@
  // Button Functionality for Completing Tasks
  document.addEventListener('DOMContentLoaded', () => {
     const buttons = {
-        'shopEaseBtn': 'Shop Ease',
-        'cloudSynceBtn': 'Cloud Synce',
-        'swiftPayBtn': 'Swiftpay',
-        'metaBtn': 'Meta',
-        'googleBtn': 'Google LLC',
-        'glassDoarBtn': 'Glassdoar'
+        'shopEaseBtn': 'Fix Mobile Button Issue',
+        'cloudSynceBtn': 'Add Dark Mode',
+        'swiftPayBtn': 'Optimized Home Page',
+        'metaBtn': 'Add new emoji',
+        'googleBtn': 'Integrate OpenAI API',
+        'glassDoarBtn': 'Improve Job searching'
     };
 
     const activityLog = document.getElementById('activityLog');
@@ -29,7 +29,7 @@
             if (confirmed) {
                 const time = new Date().toLocaleTimeString();
                 const logEntry = document.createElement('li');
-                logEntry.textContent = `You have completed the task for ${projectName} at ${time}`;
+                logEntry.textContent = `You have completed the task ${projectName} at ${time}`;
                 activityLog.insertBefore(logEntry, activityLog.firstChild); // Add at the top
                 alert('Board updated Successfully');
 
@@ -49,7 +49,7 @@
 
                 
                 if (assignedTasks === 0) {
-                    alert('Congrats!!! You have completed all the current tasks');
+                    alert('Congrats!!! You have completed all the current task');
                 }
             }
         });
