@@ -4,7 +4,7 @@
         'shopEaseBtn': 'Fix Mobile Button Issue',
         'cloudSynceBtn': 'Add Dark Mode',
         'swiftPayBtn': 'Optimized Home Page',
-        'metaBtn': 'Add new emoji',
+        'metaBtn': 'Add new emoji🤲',
         'googleBtn': 'Integrate OpenAI API',
         'glassDoarBtn': 'Improve Job searching'
     };
